@@ -5,10 +5,9 @@ image_src: asset/img/logo.png
 favicon: asset/img/favicon.png
 
 menu:
-	Home: /blog-lang-php/article/
-	Sitemap: find/archive/
-#	Index: find/tag/index/
-#	Page: page/
+    Home: /
+    Sitemap: archives/
+    Page: page/
 
 #google_analytics: test
 
