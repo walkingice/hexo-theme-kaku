@@ -1,7 +1,12 @@
-# hexo-theme-monogatari
+# hexo-theme-kaku
 
-hexo-theme-monogatari is the [theme](https://github.com/hexojs/hexo/wiki/Themes) for [Hexo](http://hexo.io/).
+## Usage
 
-## Demo
+```bash
+$ cp _config.yaml.example _config.yaml  # then modify it as your wish
+```
 
-* [PHP Explore (PHP 探索)](http://foreachsam.github.io/blog-lang-php/article/)
+# Credit
+
+This theme is a fork from [hexo-theme-monogatari](https://github.com/foreachsam/hexo-theme-monogatari).
+
