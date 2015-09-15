@@ -1,0 +1,76 @@
+<div class="panel-content">
+    <div class="row">
+        <div class="title">
+            <h1><%= config.title %></h1>
+        </div>
+        <div class="">
+            <%
+                page.posts.each(function(post) {
+                    var target = '';
+                    var url = post.path;
+                    if (post.link) {
+                        url = post.link;
+                        target = ' target="_blank"';
+                    }
+                    var title = post.title;
+                    if (!title) {
+                        title = 'No Title';
+                    }
+
+                    preview = title;
+                    preview = post.excerpt ? post.excerpt: preview;
+            %>
+            <div class="article-wrap">
+                <article class="" itemscope itemtype="http://schema.org/Article" >
+                    <h1 class="article-title">
+                        <a href="<%= url_for(url) %>" itemprop="url" <%- target %>>
+                            <span  class=""><%= title %></span>
+                        </a>
+                    </h1>
+
+                    <%- preview %>
+                    <br>
+                    <a href="<%= url_for(url) %>">
+                        ......
+                        <span class="read-more"><%= _p('index.read_more') %> &gt;&gt;</span>
+                    </a>
+                    <div class="article-meta">
+                        <hr>
+
+                        <div class="groups float-right">
+                            <span class="group">
+                                <% if (post.categories) {%>
+                                    <%= _p('index.categories') %>
+                                <% post.categories.each(function(category) {%>
+                                    <a href="<%= url_for(category.path) %>">
+                                        <span class="tag"><%= category.name %></span>
+                                    </a>
+                                <% });} // end of categories %>
+                            </span>
+
+                            <span class="group">
+                                <% if (post.tags) {%>
+                                    <%= _p('index.tags') %>
+                                <% post.tags.each(function(tag) {%>
+                                    <a href="<%= url_for(tag.path) %>">
+                                        <span class="tag"><%= tag.name %></span>
+                                    </a>
+                                <% });} // end of tags %>
+                            </span>
+                        <span class="group">
+                            <a href="<%- url_for(url) %>">
+                                <span class="archive-item-date"
+                                    itemprop="datePublished"
+                                    content="<%= date(page.date) %>"><%= date(post.date) %></span>
+                            </a>
+                        </span>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+            <% }); // end of posts for-loop %>
+        </div>
+    </div>
+</div>
+
