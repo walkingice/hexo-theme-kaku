@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<%
+    var _lang = 'zh-Hant-TW';
+    _lang = config.lang ? config.lang: _lang;
+    _lang = theme.lang ? theme.lang: _lang;
+%>
+<html lang="<%= _lang %>">
     <head>
         <%- partial('_layout/head') %>
     </head>
