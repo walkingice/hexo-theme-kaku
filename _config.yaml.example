@@ -12,3 +12,6 @@ menu:
 #google_analytics: test
 
 rss: atom.xml
+
+vendors: vendors
+

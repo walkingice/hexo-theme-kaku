@@ -4,6 +4,7 @@
 
 ```bash
 $ cp _config.yaml.example _config.yaml  # then modify it as your wish
+$ bower install    # install dependency such as Font Awesome
 ```
 
 # Credit

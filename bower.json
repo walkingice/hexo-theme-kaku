@@ -1,0 +1,9 @@
+{
+  "name": "hexo-theme-kaku",
+  "version": "0.1",
+  "private": false,
+  "dependencies": {
+    "components-font-awesome": "4.4.0"
+  },
+  "devDependencies": {}
+}
