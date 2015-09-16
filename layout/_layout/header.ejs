@@ -31,7 +31,7 @@
                             <% if (theme.menu.home) { %>
                             <li class="menu-item">
                                 <a href="<%- url_for(theme.menu.home) %>">
-                                    <i class="fa fa-home gutter-right"></i>
+                                    <i class="fa fa-home gutter-right menu-icon"></i>
                                     <span class="menu-item"><%= _p('menu.home') %></span>
                                 </a>
                             </li>
@@ -41,6 +41,22 @@
                                 <a href="<%- url_for(theme.menu.archive) %>">
                                     <i class="fa fa-archive gutter-right"></i>
                                     <span class="menu-item"><%= _p('menu.archive') %></span>
+                                </a>
+                            </li>
+                            <% } // end if %>
+                            <% if (config.tag_dir) { %>
+                            <li class="menu-item">
+                                <a href="<%- url_for(config.tag_dir) %>">
+                                    <i class="fa fa-tags gutter-right"></i>
+                                    <span class="menu-item"><%= _p('menu.tags') %></span>
+                                </a>
+                            </li>
+                            <% } // end if %>
+                            <% if (theme.rss) { %>
+                            <li class="menu-item">
+                                <a href="<%- url_for(theme.rss) %>">
+                                    <i class="fa fa-rss-square gutter-right"></i>
+                                    <span class="menu-item"><%= _p('menu.rss') %></span>
                                 </a>
                             </li>
                             <% } // end if %>

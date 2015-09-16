@@ -1,6 +1,8 @@
 menu:
   home: Home
   archive: Archive
+  rss: RSS
+  tags: Tags
 index:
   read_more: Read full article
   categories: Categories
