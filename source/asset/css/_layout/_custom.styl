@@ -22,21 +22,38 @@ article
         font-size: 1rem;
         margin-top: gutter-def
         margin-bottom: gutter-def
-    .article-meta
-        .tag
-            color: #000
-            padding: 3px;
-            margin-right: 2px;
-            border-color: #ccc;
-            border-radius: 2px;
-            border-style: solid;
-            border-width: 1px;
-        .tag:hover
-            background-color: #eee;
-        span.group:first-child
-            margin-left: 0px;
-        span.group
-            margin-left: gutter-large;
+.article-meta
+    padding: gutter-large;
+    background-color: #FFF;
+    border-top: 1px solid #DDD;
+    color-tag = #F3F3F3
+    .tag
+        color: #888
+        display: inline-block
+        position: relative
+        padding: 3px 5px 3px 5px
+        margin: 5px 10px 5px 5px
+        background: color-tag
+        -webkit-border-radius: 0 5px 5px 0
+        border-radius: 0 5px 5px 0
+    .tag::before
+        position: absolute
+        width: 0px
+        height: 0px
+        content: " "
+        left: -24px
+        top: 0px
+        border-right-color: color-tag !important
+        border: 12px solid transparent
+    .tag:hover
+        color: #000
+    span.group:first-child
+        margin-left: 0px;
+    span.group
+        margin-left: gutter-large;
+
+#blog-title
+    text-shadow: 4px 3px 0px #CCC, 9px 8px 0px rgba(0, 0, 0, 0.15)
 
 h1.article-title
     font-size: 2.5rem;
