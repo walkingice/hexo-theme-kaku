@@ -15,3 +15,12 @@ rss: atom.xml
 
 vendors: vendors
 
+extlinks:
+    yourcompany:
+        name: Love
+        url: https://github.com/
+        fa: compass    # font-awesome class
+    picasa:
+        name: Picasa Album
+        url: https://link.to.your.picasa
+        fa: camera

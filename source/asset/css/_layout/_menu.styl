@@ -1,32 +1,23 @@
 
 .layout-menu
-	//// color
-	color: color-menu-text
+    color: color-menu-text
+    margin-top:20px
 
-	//// position
-	margin-top:20px
-	//margin-left:40px
+    @media screen and (max-width: trigger-width)
+        margin: 0 auto
+        width: 200px
 
-	@media screen and (max-width: trigger-width)
-		margin: 0 auto
-		width: 200px
-
+.menu-group
+    margin-bottom: gutter-large
 .menu-list
-	margin: 0 auto
-	width: 40%
-	//// debug
-	//border: 1px solid red
+    margin: 0 auto
+    width: 40%
 
-.box-menu-item
-	margin-top:5px
-
-	//// debug
-	//border: 1px solid red
-
-	a
-		color: white
-
-	a:hover
-		color: color-link-menu-hover
+.menu-item
+    margin-top:5px
+    a
+        color: white
+    a:hover
+        color: color-link-menu-hover
 
 

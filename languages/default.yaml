@@ -1,3 +1,6 @@
+menu:
+  home: Home
+  archive: Archive
 index:
   read_more: Read full article
   categories: Categories
