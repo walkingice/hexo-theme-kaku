@@ -83,6 +83,54 @@
                 </div>
                 <% } // end of dynamic links %>
 
+                <% if (theme.deflinks) { %>
+                <div class="menu-group deflinks">
+                    <div class="menu-list text-center">
+                        <% if (theme.deflinks.github) { %>
+                        <a href="<%= theme.deflinks.github%>" target="_blank">
+                            <i class="fa fa-github-square gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                        <% if (theme.deflinks.twitter) { %>
+                        <a href="<%= theme.deflinks.twitter %>" target="_blank">
+                            <i class="fa fa-twitter-square gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                        <% if (theme.deflinks.facebook) { %>
+                        <a href="<%= theme.deflinks.facebook%>" target="_blank">
+                            <i class="fa fa-facebook-square gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                        <% if (theme.deflinks.gplus) { %>
+                        <a href="<%= theme.deflinks.gplus%>" target="_blank">
+                            <i class="fa fa-google-plus-square gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                        <% if (theme.deflinks.linkedin) { %>
+                        <a href="<%= theme.deflinks.linkedin %>" target="_blank">
+                            <i class="fa fa-linkedin-square gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                        <% if (theme.deflinks.instagram) { %>
+                        <a href="<%= theme.deflinks.instagram %>" target="_blank">
+                            <i class="fa fa-instagram gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                        <% if (theme.deflinks.slideshare) { %>
+                        <a href="<%= theme.deflinks.slideshare%>" target="_blank">
+                            <i class="fa fa-slideshare gutter-right menu-icononly"></i>
+                        </a>
+                        <%} %>
+
+                    </div>
+                </div>
+                <% } // end of default links %>
             </div>
 
         </header>
