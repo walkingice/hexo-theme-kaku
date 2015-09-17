@@ -21,7 +21,7 @@
                     preview = post.excerpt ? post.excerpt: preview;
             %>
             <div class="article-wrap">
-                <article class="" itemscope itemtype="http://schema.org/Article" >
+                <article class="content" itemscope itemtype="http://schema.org/Article" >
                     <h1 class="article-title">
                         <a href="<%= url_for(url) %>" itemprop="url" <%- target %>>
                             <span  class=""><%= title %></span>
@@ -37,7 +37,7 @@
                         </span>
                     </a>
                 </article>
-                <div class="article-meta">
+                <div class="article-meta content">
                     <div class="groups">
                         <span class="group">
                             <a href="<%- url_for(url) %>">
