@@ -6,37 +6,18 @@
         <div class="">
             <%
                 page.posts.each(function(post) {
-                    var target = '';
-                    var url = post.path;
-                    if (post.link) {
-                        url = post.link;
-                        target = ' target="_blank"';
-                    }
-                    var title = post.title;
-                    if (!title) {
-                        title = 'No Title';
-                    }
+                    var title = !!post.title ? post.title : 'No Title';
+                    var url = !!post.link ? post.link : post.path;
 
                     preview = title;
                     preview = post.excerpt ? post.excerpt: preview;
             %>
             <div class="article-wrap">
-                <article class="content" itemscope itemtype="http://schema.org/Article" >
-                    <h1 class="article-title">
-                        <a href="<%= url_for(url) %>" itemprop="url" <%- target %>>
-                            <span  class=""><%= title %></span>
-                        </a>
-                    </h1>
-
-                    <%- preview %>
-                    <br>
-                    <a href="<%= url_for(url) %>">
-                        <span class="read-more">
-                            <i class="fa fa-file-text-o"></i>
-                            <%= _p('index.read_more') %> &gt;&gt;
-                        </span>
-                    </a>
-                </article>
+                <%- partial('./article-content',
+                            {'title': title,
+                                'link': url,
+                                'content': preview,
+                                'moreBtn': true}) %>
                 <%- partial('./article-meta', {'article': post}) %>
             </div>
 

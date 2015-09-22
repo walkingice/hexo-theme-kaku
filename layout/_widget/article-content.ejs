@@ -1,0 +1,19 @@
+<article class="content" itemscope itemtype="http://schema.org/Article" >
+    <h1 class="article-title">
+        <a href="<%= url_for(link) %>" itemprop="url" target="_blank">
+            <span class=""><%= title %></span>
+        </a>
+    </h1>
+
+    <%- content %>
+
+    <% if (moreBtn) { %>
+    <a href="<%= url_for(link) %>">
+        <span class="read-more">
+            <i class="fa fa-file-text-o"></i>
+            <%= _p('index.read_more') %> &gt;&gt;
+        </span>
+    </a>
+    <% }%>
+</article>
+
