@@ -46,18 +46,9 @@
                 <%- page.content %>
             </div>
 
-            <% if (page.tags && page.tags.length) { %>
-                <div class="content-tag">
-                <%-
-                    list_tags(page.tags, {
-                        show_count: false,
-                        style: 'none',
-                        separator: ', '
-                    })
-                %>
-                </div>
-            <% } %>
         </article>
+        <%- partial('./article-meta', {'article': page}) %>
+
     </div>
 
     </div>

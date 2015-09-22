@@ -1,0 +1,34 @@
+<div class="article-meta content">
+    <div class="groups">
+        <span class="group">
+            <a href="<%- url_for(url) %>">
+                <i class="fa fa-calendar"></i>
+                <span class="archive-item-date"
+                    itemprop="datePublished"
+                    content="<%= date(page.date) %>"><%= date(article.date) %></span>
+            </a>
+        </span>
+
+        <span class="group">
+            <% if (article.categories) {%>
+            <% article.categories.each(function(category) {%>
+                <a href="<%= url_for(category.path) %>">
+                    <i class="fa fa-th"></i>
+                    <span class=""><%= category.name %></span>
+                </a>
+            <% });} // end of categories %>
+        </span>
+
+        <span class="group float-right">
+            <% if (article.tags) {%>
+            <% article.tags.each(function(tag) {%>
+                <a href="<%= url_for(tag.path) %>">
+                    <span class="tag"><%= tag.name %></span>
+                </a>
+            <% });} // end of tags %>
+        </span>
+    </div>
+
+</div>
+
+
