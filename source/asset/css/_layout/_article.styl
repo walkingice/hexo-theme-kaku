@@ -23,7 +23,7 @@ article
         margin-top: gutter-def
         margin-bottom: gutter-def
     p
-        margin-top: 1.2 * article-line-height
+        margin-top: 1 * article-line-height
         margin-bottom: 1.2 * article-line-height
         a
             border-bottom: 1px dotted #bdbdbd
@@ -86,42 +86,51 @@ article
     overflow: hidden
     padding-bottom: block-20
     margin-bottom: block-10
+    header-color = #AAA
+
+    h1, h2, h3, h4, h5, h6
+        font-family: font-title
 
     h1
         //text-transform: uppercase
         font-size: 28px
+        color: header-color
         margin-top: block-40
-        margin-bottom: block-5
+        margin-bottom: block-10
 
     h2
-        border-bottom: border-default
         font-size: 24px
+        color: header-color
         padding-top: block-20
-        padding-bottom: block-5
+        margin-bottom: block-10
 
     h3
         //text-transform: uppercase
         font-size: 22px
+        color: header-color
+        font-weight: normal
         margin-top: block-10
         margin-bottom: block-10
 
     h4
         //text-transform: uppercase
-        font-size: 20px
-        margin-top: block-10
+        font-size: 1.2rem
+        margin-top: block-5
         margin-bottom: block-10
-
 
     h5
         //text-transform: uppercase
-        font-size: 18px
-        margin-top: block-10
+        font-size: 1rem
+        text-indent: 5px
+        margin-top: block-5
         margin-bottom: block-10
 
     h6
         //text-transform: uppercase
-        font-size: 16px
-        margin-top: block-10
+        font-style: italic
+        font-size: 1rem
+        text-indent: 5px
+        margin-top: block-5
         margin-bottom: block-10
 
 
