@@ -70,11 +70,18 @@
         padding-left: 15px
         line-height: 2
 
-    span
-        font-size: font-small
+.archive-list, .category-list, .tag-list
+    .archive-list-link, .category-list-link, .tag-list-link
+        font-size: 1.2rem
+    .archive-list-count, .category-list-count, .tag-list-count
         position: relative
-        top: -1px
-        color: color-grey
+        display: inline-block
+        min-width: 10px
+        font-size: 12px
+        border-radius: 10px
+        line-height: 1rem
+        color: #FFF
+        background-color: #CCC
+        padding: 3px 7px
+        margin-left: gutter-def
 
-    span:before
-        content: " - "
