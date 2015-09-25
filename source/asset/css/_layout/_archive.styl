@@ -1,17 +1,32 @@
 
 .box-archive-list
     margin: 0 auto
-    width: 90%
 
     //debug
     //border: 1px solid blue
 
+    ul,ol
+        padding-top: gutter-large
+        padding-left: 0px
+    box-border-style = solid 1px #DDD
     li
-        margin-top: 20px
-        margin-bottom: 40px
-        border-bottom: border-default
+        padding-top: gutter-def
+        padding-bottom: gutter-def
+        padding-left: 10px
+        padding-right: 10px
+        background: #EEE
+        border-top: box-border-style
+        list-style-type: none
+        margin-top: -1px
+    li:last-child
+        border-bottom: box-border-style
+    li:hover
+        background: white
 
-.box-archive-item-date
+.archive-item-title
+    font-size: 1.2rem
+    font-weight: bold
+.archive-item-date
     //position
     position: relative
     float: right
