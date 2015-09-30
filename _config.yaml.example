@@ -13,7 +13,7 @@ vendors: vendors
 deflinks:    # supports github, twitter, facebook, gplus, linkedin, instagram, slideshare
     github: https://github.com/foobar
     twitter: https://twitter.com/foobar
-extlinks:
+otherlinks:
     yourcompany:
         name: Love
         url: https://github.com/

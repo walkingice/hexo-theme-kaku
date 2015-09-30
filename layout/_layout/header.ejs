@@ -56,10 +56,10 @@
                     </nav>
                 </div>
 
-                <% if (theme.extlinks) { %>
+                <% if (theme.otherlinks) { %>
                 <div class="menu-group">
                     <div class="menu-list">
-                    <% for (var k in theme.extlinks) { var link = theme.extlinks[k] %>
+                    <% for (var k in theme.otherlinks) { var link = theme.otherlinks[k] %>
                         <div class="menu-item">
                             <a href="<%= link.url %>" target="_blank">
                                 <% if (link.fa) { %>
