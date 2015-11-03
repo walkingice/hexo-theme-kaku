@@ -1,8 +1,0 @@
-
-<% if (page.prev) { %>
-    <a class="nav-btn" href="<%- url_for(config.root + page.prev.path) %>" title="<%-page.prev.title %>"><b><%-page.prev.title%></b> &larr; Prev</a>
-<% } %>
-
-<% if (page.next) { %>
-    <a class="nav-btn" href="<%- url_for(config.root + page.next.path) %>" title="<%-page.next.title %>">Next &rarr; <b><%-page.next.title%></b></a>
-<% } %>

@@ -1,0 +1,104 @@
+.layout-logo
+    background-color: color-layout-logo-backgroud
+
+.panel-logo
+    padding-top: 10px
+    padding-bottom: 10px
+
+.box-logo
+    margin: 0 auto
+    max-width: 200px
+    width: 100%
+
+.img-logo
+    margin: 0 auto
+    max-width: 200px
+    width: 100%
+    border-radius: 200px
+
+.box-main-title
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-top: gutter-large
+    margin-bottom: gutter-def
+    width: 90%
+
+.box-sub-title
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    margin-top: gutter-def
+    margin-bottom: gutter-def
+    width: 90%
+.layout-header
+    //// position
+    position: fixed
+    left: 0
+    bottom: 0
+    right: auto
+    top: 0
+    z-index: 999
+
+    //// size
+    width: sidebar-width
+
+    //// color
+    background-color: color-theme
+
+    //// box
+    box-side-shadow(color-sidebar-shadow)
+
+    //// debug
+    //border: 1px solid red
+    //display: none
+
+    @media screen and (max-width: trigger-width)
+        //// position
+        position: static
+        margin: 0 auto
+
+        //// size
+        width: 100%
+
+.menu-list
+    margin: 0 auto
+    width: menu-list-width
+    line-height: 2rem
+
+.layout-menu
+    color: color-menu-text
+    margin-top:20px
+
+    @media screen and (max-width: trigger-width)
+        margin: 0 auto
+        width: 200px
+    ul
+        padding: 0
+        list-style: none
+
+.menu-group
+    margin-bottom: gutter-large
+
+.menu-item
+    font-size: menu-font-size
+    i
+        width: 1rem;
+    margin-top:5px
+    a
+        color: white
+    a:hover
+        color: color-link-menu-hover
+
+.deflinks
+    .menu-list
+        margin: 0 auto
+        width: 90%
+    a
+        color: white
+    a:hover
+        color: color-link-menu-hover
+.menu-icononly
+    margin-right: gutter-small
+    margin-left: gutter-small
+    font-size: 2.5rem !important

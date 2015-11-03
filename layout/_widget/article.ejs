@@ -1,4 +1,4 @@
-<div class="row panel-content panel-post-item">
+<div class="row panel-content">
     <%
         var title = !!page.title ? page.title : 'No Title';
         var link = !!page.link ? page.link : url_for(page.path);
@@ -15,7 +15,12 @@
 
     <div class="panel-post-nav">
         <div class="box-post-nav">
-            <%- partial('_widget/article-nav') %>
+            <% if (page.prev) { %>
+                <a class="btn" href="<%- url_for(config.root + page.prev.path) %>" title="<%-page.prev.title %>"><b><%-page.prev.title%></b> &larr; Prev</a>
+            <% } %>
+            <% if (page.next) { %>
+                <a class="btn" href="<%- url_for(config.root + page.next.path) %>" title="<%-page.next.title %>">Next &rarr; <b><%-page.next.title%></b></a>
+            <% } %>
         </div>
     </div>
 </div>
