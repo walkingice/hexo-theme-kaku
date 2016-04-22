@@ -20,9 +20,9 @@
                                 'moreBtn': true}) %>
                 <%- partial('./article-meta', {'article': post}) %>
             </div>
-
-
             <% }); // end of posts for-loop %>
+
+            <%- partial('./article-nav', {page}) %>
         </div>
     </div>
 </div>

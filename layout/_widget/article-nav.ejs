@@ -1,0 +1,9 @@
+<div class="box-article-nav">
+<%if (page.prev) {%>
+    <a class="btn" href="<%- url_for(page.prev_link) %>">&larr; Prev</a>
+<%}%>
+
+<%if (page.next) {%>
+    <a class="btn" href="<%- url_for(page.next_link) %>">Next &rarr;</a>
+<%}%>
+</div>
