@@ -1,2 +1,5 @@
 _config.yaml
 source/vendors
+
+node_modules
+yarn.lock
