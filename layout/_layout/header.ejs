@@ -73,7 +73,13 @@
                     <% } // end of for %>
                     </div>
                 </div>
-                <% } // end of dynamic links %>
+                <% } // end of otherlinks %>
+
+                <% if (theme.extracomments) { %>
+                <div class="extra-comments">
+                    <%- theme.extracomments %>
+                </div>
+                <% } // end of extracomments%>
 
                 <% if (theme.deflinks) { %>
                 <div class="menu-group deflinks">

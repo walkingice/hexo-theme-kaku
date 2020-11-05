@@ -22,3 +22,5 @@ otherlinks:
         name: Picasa Album
         url: https://link.to.your.picasa
         fa: camera
+
+extracomments: <div>some extra comment as HTML</div>
