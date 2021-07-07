@@ -1,5 +1,12 @@
 <%
+_ga='';
 if (theme.google_analytics) {
+  _ga = theme.google_analytics;
+}
+if (config.google_analytics) {
+  _ga = config.google_analytics;
+}
+if (_ga) {
 %>
 <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -7,7 +14,7 @@ if (theme.google_analytics) {
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '<%= theme.google_analytics %>', 'auto');
+    ga('create', '<%= _ga %>', 'auto');
     ga('send', 'pageview');
 </script>
 <%
